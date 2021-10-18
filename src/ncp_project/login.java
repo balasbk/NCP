@@ -34,7 +34,7 @@ public class login {
             "jdbc:mysql://localhost:3306/ncp","root","1234");  
           Statement s=c.createStatement();  
           // DATA is populated using US DATA CSV
-          ResultSet rs=s.executeQuery("select * from login");
+          ResultSet rs=s.executeQuery(`select * from student_details where sid=1`);
           DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
           DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
           Document doc = docBuilder.newDocument();
